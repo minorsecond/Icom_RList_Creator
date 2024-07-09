@@ -14,7 +14,7 @@ This repository contains the `RListCreator.py` script, which helps you create a 
 ### 2. Download Repeater CSV Files
 1. Go to [RepeaterBook](https://www.repeaterbook.com/).
 2. Download the CSV files for the repeaters you want to load into your radio.
-   1. After finding a list of repeaters, click export in the blue bar.
+   1. After finding a list of repeaters, click export in the blue bar. Note: you may need to split your 2M/70CM data into separate searches if there are over 1,000 results for the combined search.
    2. Click "CSV".
    3. Click "OK" on the prompt.
 
