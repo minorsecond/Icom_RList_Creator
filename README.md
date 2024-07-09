@@ -58,13 +58,10 @@ This repository contains the `RListCreator.py` script, which helps you create a 
 
 The new data should now be loaded into the Near Repeater list.
 
-### Tested Devices
+### Works With:
 
 * ICOM ID-50
-
-The script should also work with:
-
-* ICOM ID-52 (not yet tested)
+* ICOM ID-52
 
 ### License
 
