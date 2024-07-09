@@ -90,7 +90,8 @@ def process_csv(file_path, group_no, group_name, utc_offset, name_choice):
 
 def main():
     input_dir = input("Please enter the path to the directory containing the CSV files: ").strip()
-    output_file = 'output.csv'
+    output_filename = input("Please enter the repeater list filename: ").strip()
+    output_file = f'{output_filename}.csv'
 
     if not os.path.isdir(input_dir):
         print(f"Error: The directory '{input_dir}' does not exist.")
@@ -107,7 +108,6 @@ def main():
             group_name = input(f"Enter group name for {filename}: ").strip()
             utc_offset = input(f"Enter UTC offset for {filename} (e.g., -6): ").strip()
 
-            # Display options for Name column selection
             df = pd.read_csv(file_path)
             print(f"\nFirst few values from Location column of {filename}:")
             print(df['Location'].head())
@@ -128,7 +128,6 @@ def main():
             processed_df = process_csv(file_path, group_no, group_name, utc_offset, name_choice)
             all_dfs.append(processed_df)
 
-        # Concatenate all dataframes and sort by Group No and Frequency
     final_df = pd.concat(all_dfs, ignore_index=True).sort_values(by=['Group No', 'Frequency'])
 
     # Save to CSV
