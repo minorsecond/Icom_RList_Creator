@@ -23,19 +23,18 @@ This repository contains the `RListCreator.py` script, which helps you create a 
 2. Place each downloaded CSV file that you want to load into your radio into this directory.
 
 ### 4. Run the Script
-1. Make sure you have Python installed on your computer.
-2. Download the `RListCreator.py` script from this repository.
-3. Open a terminal or command prompt.
-4. Navigate to the directory where you saved the `RListCreator.py` script.
-5. Run the script by entering the following command:
+1. Download the `RListCreator.py` script from this repository.
+2. Open a terminal or command prompt.
+3. Navigate to the directory where you saved the `RListCreator.py` script.
+4. Run the script by entering the following command:
    ```sh
    python RListCreator.py
    ```
-6. Follow the prompts:
+5. Follow the prompts:
 
-1. Enter the path to the directory containing the CSV files.
-2. Enter the group number, group name, and UTC offset for each file.
-3. Select whether to use the Location or Output Freq column for the Name field.
+   1. Enter the path to the directory containing the CSV files.
+   2. Enter the group number, group name, and UTC offset for each file.
+   3. Select whether to use the Location or Output Freq column for the Name field.
 
 ### 5. Copy the New CSV to the Radio
 
