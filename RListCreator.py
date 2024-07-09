@@ -90,7 +90,7 @@ def process_csv(file_path, group_no, group_name, utc_offset, name_choice):
 
 def main():
     input_dir = input("Please enter the path to the directory containing the CSV files: ").strip()
-    output_filename = input("Please enter the repeater list filename: ").strip()
+    output_filename = input("Please enter the output repeater list filename: ").strip()
 
     if '.' in output_filename and not output_filename.endswith('.csv'):
         print("Error: Filename entry must either have no extension or end with '.csv'.")
