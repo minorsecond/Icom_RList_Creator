@@ -117,14 +117,21 @@ def main():
             print(f"\nFirst few values from {output_freq_col} column of {filename}:")
             print(df[output_freq_col].head())
 
-            name_choice = input(
-                f"Enter column to use for Name (Location or {output_freq_col}) for {filename}: ").strip()
+            while True:
+                name_choice = input(
+                    f"Enter column to use for Name (Location or {output_freq_col}) for {filename}: ").strip()
+                if name_choice in ['Location', output_freq_col]:
+                    break
+                else:
+                    print(f"Invalid choice. Please enter 'Location' or '{output_freq_col}'.")
 
             processed_df = process_csv(file_path, group_no, group_name, utc_offset, name_choice)
             all_dfs.append(processed_df)
 
+        # Concatenate all dataframes and sort by Group No and Frequency
     final_df = pd.concat(all_dfs, ignore_index=True).sort_values(by=['Group No', 'Frequency'])
 
+    # Save to CSV
     final_df.to_csv(output_file, index=False)
     print(f"\nOutput CSV saved to {output_file}")
 
