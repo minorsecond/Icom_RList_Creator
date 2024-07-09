@@ -42,8 +42,7 @@ This repository contains the `RListCreator.py` script, which helps you create a 
 2. Navigate to the <radio model>/Csv/RptList directory on the microSD card.
 3. Copy the new CSV file created by the script into this directory.
 
-### 6. 
-Import the Repeater List on the Radio
+### 6. Import the Repeater List on the Radio
 
 1. Insert the microSD card back into the radio.
 2. Turn on the radio.
