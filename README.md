@@ -4,15 +4,22 @@ This repository contains the `RListCreator.py` script, which helps you create a 
 
 ## Steps to Create and Load the Repeater List
 
-### 1. Download Repeater CSV Files
+### 1. Install Dependencies
+1. Make sure you have Python installed on your computer.
+2. Install the Pandas library by running the following command:
+   ```sh
+   pip install pandas
+   ```
+
+### 2. Download Repeater CSV Files
 1. Go to [RepeaterBook](https://www.repeaterbook.com/).
 2. Download the CSV files for the repeaters you want to load into your radio.
 
-### 2. Prepare the CSV Directory
+### 3. Prepare the CSV Directory
 1. Create a directory on your computer.
 2. Place each downloaded CSV file that you want to load into your radio into this directory.
 
-### 3. Run the Script
+### 4. Run the Script
 1. Make sure you have Python installed on your computer.
 2. Download the `RListCreator.py` script from this repository.
 3. Open a terminal or command prompt.
@@ -23,17 +30,17 @@ This repository contains the `RListCreator.py` script, which helps you create a 
    ```
 6. Follow the prompts:
 
-    Enter the path to the directory containing the CSV files.
-    Enter the group number, group name, and UTC offset for each file.
-    Select whether to use the Location or Output Freq column for the Name field.
+1. Enter the path to the directory containing the CSV files.
+2. Enter the group number, group name, and UTC offset for each file.
+3. Select whether to use the Location or Output Freq column for the Name field.
 
-### 4. Copy the New CSV to the Radio
+### 5. Copy the New CSV to the Radio
 
 1. Insert your radio's microSD card into your computer.
 2. Navigate to the <radio model>/Csv/RptList directory on the microSD card.
 3. Copy the new CSV file created by the script into this directory.
 
-### 5. 
+### 6. 
 Import the Repeater List on the Radio
 
 1. Insert the microSD card back into the radio.
